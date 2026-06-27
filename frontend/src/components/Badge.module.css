@@ -1,0 +1,20 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.low { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+.medium { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+.high { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+.critical { background: rgba(220, 38, 38, 0.2); color: var(--critical); }
+.urgent { background: rgba(239, 68, 68, 0.2); color: var(--critical); }
+.pending { background: rgba(152, 152, 168, 0.15); color: var(--text-secondary); }
+.in_progress { background: rgba(99, 102, 241, 0.15); color: var(--accent-hover); }
+.completed { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+.overdue { background: rgba(220, 38, 38, 0.2); color: var(--critical); }
