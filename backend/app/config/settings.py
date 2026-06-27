@@ -4,6 +4,7 @@ from functools import lru_cache
 from typing import Literal
 
 from pydantic import model_validator
+# pyrefly: ignore [missing-import]
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 _DEFAULT_JWT_SECRET = "change-me-in-production"
@@ -26,7 +27,7 @@ class Settings(BaseSettings):
     # Server
     host: str = "0.0.0.0"
     port: int = 8000
-    cors_origins: str = "http://localhost:5173,http://localhost:3000"
+    cors_origins: str = "http://localhost:5173,http://localhost:3000,https://chronos-ai-xi.vercel.app"
 
     # MongoDB
     mongo_uri: str = "mongodb://localhost:27017"
@@ -39,7 +40,7 @@ class Settings(BaseSettings):
     # Google OAuth
     google_client_id: str = ""
     google_client_secret: str = ""
-    google_redirect_uri: str = "http://localhost:8000/auth/callback"
+    google_redirect_uri: str = "https://chronos-ai-2ag7.onrender.com/auth/callback"
 
     # JWT
     jwt_secret_key: str = _DEFAULT_JWT_SECRET
